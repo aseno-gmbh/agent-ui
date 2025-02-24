@@ -1,0 +1,32 @@
+credentials:
+  usernames:
+    preme:
+      name: premeteam
+      email: dev@cd.eu
+      password: $2b$12$Rj5LfH6iXbW08CoyB5wYQOmAUFQrzima90/tvnWlTPdAj12EqXy8G #dEvPremeMega$
+    premeuser:
+      name: premeuser
+      email: premeuser@cd.eu
+      password: $2b$12$zkuDhLQ1eMB7FnWlSqNWh.qgohpGI1ktTxRWJr0LNQz3Bxn0cmS/K #PremeMega$
+cookie:
+  expiry_days: 1
+  key: ThisIsSuper48StrongKey9!$
+  name: chatbotkey
+models:
+  azure-openai-gpt-4o-mini:
+    cloud: azure
+    enabled: true
+    url: https://llmaastest2438798591.openai.azure.com/
+    token: "XXXX"
+    modelname: "gpt-4o-mini"
+    apiversion: "2024-05-01-preview"
+  meta-llama-3.3-70B-instruct:
+    enabled: false
+    url: http://llama3-3-70b.chatbot.svc.cluster.local/v1
+    modelname: "meta-llama/Llama-3.3-70B-Instruct"
+    token: na
+  Qwen2.5-72B-Instruct-AWQ:
+    enabled: false
+    url: http://qwen2572b.chatbot.svc.cluster.local/v1
+    modelname: "Qwen/Qwen2.5-72B-Instruct-AWQ"
+    token: na
