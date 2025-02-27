@@ -10,6 +10,7 @@ from openai.types.chat import ChatCompletionChunk
 from openai import OpenAI
 from openai import AzureOpenAI
 from typing import Generator
+from envs import Settings
 
 # open config file for references
 with open('./app/config.yaml') as file:
@@ -24,8 +25,8 @@ def stream_any_model(prompt, model, history):
 
     if config['models'].get(model).get("cloud") == "azure":
         client = AzureOpenAI(  
-            azure_endpoint=config['models'].get(model).get("url"),  
-            api_key=config['models'].get(model).get("token", "-"),
+            azure_endpoint=str(Settings().AZURE_API_URL),  
+            api_key=Settings().AZURE_API_KEY.get_secret_value(),
             api_version="2024-05-01-preview",
             )
     else:

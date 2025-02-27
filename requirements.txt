@@ -4,3 +4,4 @@ aleph_alpha_client
 requests
 #openai==1.56.1
 openai
+pydantic

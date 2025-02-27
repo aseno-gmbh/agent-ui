@@ -7,3 +7,4 @@ with open('config.yaml') as file:
 
 # Pre-hashing all plain text passwords once
 print(stauth.Hasher.hash_passwords(config['credentials']))
+#print(stauth.Hasher.hash("cdpIsMega#"))

@@ -2,12 +2,16 @@ credentials:
   usernames:
     preme:
       name: premeteam
-      email: dev@cd.eu
+      email: dev@cd.de
       password: $2b$12$Rj5LfH6iXbW08CoyB5wYQOmAUFQrzima90/tvnWlTPdAj12EqXy8G #dEvPremeMega$
-    premeuser:
-      name: premeuser
-      email: premeuser@cd.eu
-      password: $2b$12$zkuDhLQ1eMB7FnWlSqNWh.qgohpGI1ktTxRWJr0LNQz3Bxn0cmS/K #PremeMega$
+    # premeuser:
+    #   name: premeuser
+    #   email: premeuser@cd.eu
+    #   password: $2b$12$zkuDhLQ1eMB7FnWlSqNWh.qgohpGI1ktTxRWJr0LNQz3Bxn0cmS/K #PremeMega$
+    cdpuser:
+      name: cdpuser
+      email: cdpuser@cd.eu
+      password: $2b$12$2zUvbKcQKsdoQtlQDen0/OzNyD47upPaqjeWfBuayjG8KcABjq29O #cdpIsMega#
 cookie:
   expiry_days: 1
   key: ThisIsSuper48StrongKey9!$
