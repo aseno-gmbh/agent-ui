@@ -25,7 +25,7 @@ except Exception as e:
 
 # Logout button
 if st.session_state['authentication_status']:
-    st.sidebar.markdown(f"<h4 style='color: var(--text-color);'>Hallo {st.session_state.name}</h4>", unsafe_allow_html=True)
+    st.sidebar.markdown(f"<h4 style='color: var(--text-color);'>Hello {st.session_state.name}</h4>", unsafe_allow_html=True)
     authenticator.logout("Logout", "sidebar")
 # Streamlit App
     # List of models
@@ -54,7 +54,7 @@ if st.session_state['authentication_status']:
             st.markdown(message["content"])
 
     # React to user input
-    user_prompt = st.chat_input("Gib deinen Text ein", key="user_input")
+    user_prompt = st.chat_input("Enter your text", key="user_input")
     if user_prompt:
         # Display user input in chat message container    
         with st.chat_message("user"):

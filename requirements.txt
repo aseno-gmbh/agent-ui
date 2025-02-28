@@ -1,6 +1,6 @@
 streamlit
 streamlit_authenticator
-aleph_alpha_client
+#aleph_alpha_client
 requests
 #openai==1.56.1
 openai
